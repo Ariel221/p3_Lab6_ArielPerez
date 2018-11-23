@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -14,6 +15,7 @@ class caja{
     private:
         int fragil;
         int peso;
+
 
 
     //metodos publicos

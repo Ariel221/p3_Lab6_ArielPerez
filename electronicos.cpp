@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 
+
 using namespace std;
 
 //Cosntructor 1
@@ -26,6 +27,6 @@ void electronicos:: setFragil(int fragil){
 
 electronicos::~electronicos(){
 
-  
+
 
 }

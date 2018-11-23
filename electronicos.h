@@ -1,40 +1,36 @@
-#include "compu.h"
-#include <iostream>
 #include <string>
+#include <iostream>
 
 using namespace std;
 
-//Cosntructor 1
-compu::compu(string sistema,int fragil){
-    this->sistema=sistema;
-    this->fragil=fragil;
-}//Fin constructor
+#ifndef ELECTRONICOS_H
+#define ELECTRONICOS_H
 
-//Constructor2
-compu::compu(){
 
-}//Fin constructor sencillo
+//Inicio clase
+class electronicos{
 
-string compu::getSistema(){
-    return sistema;
-}
+    //Atributos
+    private:
+        int fragil;
 
-void compu:: setSistema(string sistema){
 
-    this->sistema=sistema;
+    //metodos publicos
+    public:
+        //prototipos de metodos
+        //constructor
+        electronicos();
+        electronicos(int);
 
-}
+        //metodos accersores / mutadores
+        int getFragil();
+        void setFragil(int);
 
-int compu::getFragil(){
-    return fragil;
-}
+    //Destructor
+    ~electronicos();
 
-void compu:: setFragil(int fragil){
 
-    this->fragil=fragil;
+};//Fin de la clase
 
-}
 
-compu::~compu(){
-
-}
+#endif
