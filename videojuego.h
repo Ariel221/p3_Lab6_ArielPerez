@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include "electronicos.h"
 
 using namespace std;
 
@@ -8,7 +9,7 @@ using namespace std;
 
 
 //Inicio clase
-class videojuego{
+class videojuego : public electronicos{
 
     //Atributos
     private:

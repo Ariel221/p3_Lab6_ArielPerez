@@ -1,6 +1,7 @@
 #include "caja.h"
 #include <iostream>
 #include <string>
+#include "producto.h"
 
 using namespace std;
 
@@ -34,6 +35,15 @@ void caja:: setPeso(int peso){
     this->peso=peso;
 
 }
+
+vector<producto*> caja::getLista(){
+  return lista;
+}
+
+void caja::setLista(vector<producto*> lista){
+  this->lista=lista;
+}
+
 
 caja::~caja(){
 

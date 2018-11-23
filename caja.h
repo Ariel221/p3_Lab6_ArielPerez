@@ -1,6 +1,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include "producto.h"
 
 using namespace std;
 
@@ -13,6 +14,7 @@ class caja{
 
     //Atributos
     private:
+        vector<producto*> lista;
         int fragil;
         int peso;
 
@@ -30,6 +32,8 @@ class caja{
         void setFragil(int);
         int getPeso();
         void setPeso(int);
+        vector<producto*> getLista();
+        void setLista(vector<producto*>);
 
     //Destructor
     ~caja();

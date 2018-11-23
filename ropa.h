@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include "producto.h"
 
 using namespace std;
 
@@ -8,10 +9,9 @@ using namespace std;
 
 
 //Inicio clase
-class ropa{
-
+class ropa : public producto{
     //Atributos
-    private:
+  protected:
         int fragil;
         string tipo;
 

@@ -1,7 +1,7 @@
 salida:	caja.o compu.o electronicos.o libros.o producto.o ropa.o videojuego.o main.o
 	g++ caja.o compu.o electronicos.o libros.o producto.o ropa.o videojuego.o main.o -o salida
 
-caja.o: caja.cpp caja.h
+caja.o: caja.cpp caja.h producto.h
 	g++ -c caja.cpp
 
 compu.o: compu.cpp compu.h

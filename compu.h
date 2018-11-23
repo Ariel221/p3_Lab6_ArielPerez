@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include "electronicos.h"
 
 using namespace std;
 
@@ -8,10 +9,10 @@ using namespace std;
 
 
 //Inicio clase
-class compu{
+class compu : public electronicos{
 
     //Atributos
-    private:
+  protected:
         string sistema;
         int fragil;
 

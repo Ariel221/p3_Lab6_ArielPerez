@@ -13,25 +13,29 @@ using namespace std;
 using std::string;
 
 int menu();
+int menu2();
 
 
 int main(){
 char resp='s';
 do {
 switch (menu()) {
-  case 1:
+  case 1:{
   int eleccion;
   std::cout << "Elija lo que desea crear" << '\n';
   std::cout << "1-Libros" << '\n';
   std::cout << "2-ropa" << '\n';
   std::cout << "3-videojuegos" << '\n';
   std::cout << "4-computadoras" << '\n';
+  cin>>eleccion;
   switch (eleccion) {
     case 1:{
     int code;
     std::cout << "Ingrese el codigo de ropa:" << '\n';
     cin>>code;
+
 }
+
     break;
     case 2:{
     string tipo;
@@ -56,9 +60,12 @@ switch (menu()) {
 
   }
 
-
+}
   break;
   case 2:
+  std::cout << "matriz de almacenes fragiles" << '\n';
+
+
   break;
   case 3:
   break;
@@ -89,4 +96,9 @@ cout << endl
        cout<<"----------------------------------- "<<endl;
        cin>>resp;
        return resp;
+}
+
+int menu2(){
+  int r;
+
 }

@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include "producto.h"
 
 using namespace std;
 
@@ -8,7 +9,7 @@ using namespace std;
 
 
 //Inicio clase
-class electronicos{
+class electronicos : public producto{
 
     //Atributos
     private:
