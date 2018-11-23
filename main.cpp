@@ -47,24 +47,28 @@ switch (menu()) {
     int code;
     std::cout << "Ingrese el codigo de ropa:" << '\n';
     cin>>code;
+    std::cout << "se ha agregado su producto" << '\n';
 }
     break;
     case 2:{
     string tipo;
     std::cout << "Ingrese el tipo de ropa:" << '\n';
     cin>>tipo;
+    std::cout << "se agrego" << '\n';
   }
     break;
     case 3:{
     string creador;
     std::cout << "Ingrese el desarrollador:" << '\n';
     cin>>creador;
+    std::cout << "se agrego" << '\n';
   }
     break;
     case 4:{
     string sistem;
     std::cout << "Ingrese el sistema operativo:" << '\n';
     cin>>sistem;
+    std::cout << "se agrego" << '\n';
   }
     break;
     default:
@@ -82,6 +86,7 @@ switch (menu()) {
 }
   break;
   case 4:{
+    std::cout << "mostrando la informacion de las cajas....." << '\n';
 
   }
 
